@@ -286,7 +286,7 @@ with tab_results:
     # Mean
 
     st.markdown(
-        "## Mean Volume"
+        "## Nominal Volume"
     )
 
     m1, m2 = st.columns(2)
@@ -394,7 +394,7 @@ with tab_results:
 # ======================================================
 
 st.caption(
-    "Tolerance applied individually using worst-case scenario"
+    "Tolerance calculated using RSS and worst-case analysis"
 )
 
 st.caption(
