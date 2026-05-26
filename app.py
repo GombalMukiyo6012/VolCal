@@ -26,13 +26,30 @@ st.set_page_config(
 )
 
 # ======================================================
-# TABS
+# STICKY TABS
 # ======================================================
+st.markdown(
+    """
+    <style>
+
+    div[data-baseweb="tab-list"] {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color: white;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
 tab_input, tab_results = st.tabs(
     ["Input", "Results"]
 )
-
 # ======================================================
 # INPUT TAB
 # ======================================================
