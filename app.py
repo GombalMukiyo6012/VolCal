@@ -43,9 +43,7 @@ with left_top:
 - Water density = **0.998 g/mL**
 - Output format = Nominal (Min ~ Max)
 - Include RSS and Worst-Case tolerence stack analysis
-- References Volume 
-    LD = 5 uL
-    SD = 1 uL
+- References Volume LD = 5 uL / SD = 1 uL
 """
     )
 
