@@ -32,14 +32,20 @@ st.markdown(
     """
     <style>
 
-    div[data-baseweb="tab-list"] {
+    /* sticky tabs */
+    .stTabs [data-baseweb="tab-list"]{
         position: sticky;
         top: 0;
-        z-index: 999;
-        background-color: white;
+        z-index: 1000;
+        background: white;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-        border-bottom: 1px solid #e6e6e6;
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* keep content below tab */
+    .stTabs [data-baseweb="tab-panel"]{
+        padding-top: 0.5rem;
     }
 
     </style>
