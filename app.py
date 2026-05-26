@@ -360,32 +360,80 @@ with tab_results:
     st.markdown(
         "## Parameters"
     )
-
+    
     p1, p2 = st.columns(2)
-
+    
     with p1:
-
+    
         parameter_block(
             "LD",
             {
-                "Valve": valve_ld,
-                "Air D": d_air_ld,
-                "Air H": h_air_ld,
-                "Liquid D": d_liq_ld,
-                "Liquid H": h_liq_ld,
+                "Valve Thickness": {
+                    "nominal": valve_ld,
+                    "plus": valve_ld_plus,
+                    "minus": valve_ld_minus,
+                },
+    
+                "AL Dome Diameter": {
+                    "nominal": d_air_ld,
+                    "plus": d_air_ld_plus,
+                    "minus": d_air_ld_minus,
+                },
+    
+                "AL Dome Depth": {
+                    "nominal": h_air_ld,
+                    "plus": h_air_ld_plus,
+                    "minus": h_air_ld_minus,
+                },
+    
+                "LL Dome Diameter": {
+                    "nominal": d_liq_ld,
+                    "plus": d_liq_ld_plus,
+                    "minus": d_liq_ld_minus,
+                },
+    
+                "LL Dome Depth": {
+                    "nominal": h_liq_ld,
+                    "plus": h_liq_ld_plus,
+                    "minus": h_liq_ld_minus,
+                },
             },
         )
-
+    
     with p2:
-
+    
         parameter_block(
             "SD",
             {
-                "Valve": valve_sd,
-                "Air D": d_air_sd,
-                "Air H": h_air_sd,
-                "Liquid D": d_liq_sd,
-                "Liquid H": h_liq_sd,
+                "Valve Thickness": {
+                    "nominal": valve_sd,
+                    "plus": valve_sd_plus,
+                    "minus": valve_sd_minus,
+                },
+    
+                "AL Dome Diameter": {
+                    "nominal": d_air_sd,
+                    "plus": d_air_sd_plus,
+                    "minus": d_air_sd_minus,
+                },
+    
+                "AL Dome Depth": {
+                    "nominal": h_air_sd,
+                    "plus": h_air_sd_plus,
+                    "minus": h_air_sd_minus,
+                },
+    
+                "LL Dome Diameter": {
+                    "nominal": d_liq_sd,
+                    "plus": d_liq_sd_plus,
+                    "minus": d_liq_sd_minus,
+                },
+    
+                "LL Dome Depth": {
+                    "nominal": h_liq_sd,
+                    "plus": h_liq_sd_plus,
+                    "minus": h_liq_sd_minus,
+                },
             },
         )
 
