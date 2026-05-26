@@ -138,8 +138,14 @@ def parameter_block(
         f"### {title}"
     )
 
-    for name, value in params.items():
+    for label, values in params.items():
+
+        nominal = values["nominal"]
+        tol_plus = values["plus"]
+        tol_minus = values["minus"]
 
         st.write(
-            f"{name} : {value:.3f} mm"
+            f"{label} : "
+            f"{nominal:.3f} mm "
+            f"(+{tol_plus:.3f} / -{tol_minus:.3f})"
         )
