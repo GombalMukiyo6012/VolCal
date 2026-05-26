@@ -26,6 +26,39 @@ st.set_page_config(
 )
 
 # ======================================================
+# PAGE HEADER
+# ======================================================
+
+left_top, right_top = st.columns([2.3, 1])
+
+with left_top:
+
+    st.title(
+        "🔵 HV3PFE Chip Volume Calculator"
+    )
+
+    st.write(
+        """
+Output shown in **µL**
+
+- Water density = **0.998 g/mL**
+- Valve thickness reduces AIR dome only
+- Final Combined = Air + Liquid
+- Output format = Nominal (Min ~ Max)
+"""
+    )
+
+with right_top:
+
+    st.markdown(
+        "##### 📐 Dimension Guide"
+    )
+
+    st.pyplot(
+        draw_reference()
+    )
+
+# ======================================================
 # STICKY TABS
 # ======================================================
 st.markdown(
@@ -61,42 +94,6 @@ tab_input, tab_results = st.tabs(
 # ======================================================
 
 with tab_input:
-
-    # ----------------------------------
-    # HEADER
-    # ----------------------------------
-
-    left_top, right_top = st.columns(
-        [2.3, 1]
-    )
-
-    with left_top:
-
-        st.title(
-            "🔵 HV3PFE Chip Volume Calculator"
-        )
-
-        st.write(
-            """
-Output shown in **µL**
-
-- Water density = **0.998 g/mL**
-- Valve thickness reduces AIR dome only
-- Final Combined = Air + Liquid
-- Output format = Nominal (Min ~ Max)
-"""
-        )
-
-    with right_top:
-
-        st.markdown(
-            "##### 📐 Dimension Guide"
-        )
-
-        st.pyplot(
-            draw_reference()
-        )
-
     # ----------------------------------
     # VALVE
     # ----------------------------------
