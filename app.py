@@ -39,12 +39,13 @@ with left_top:
 
     st.write(
         """
-Output shown in **µL**
-
+- Output shown in **µL** (microliter)
+- Include RSS and Worst-Case tolerence stack analysis
 - Water density = **0.998 g/mL**
-- Valve thickness reduces AIR dome only
-- Final Combined = Air + Liquid
 - Output format = Nominal (Min ~ Max)
+- References Volume 
+    LD = 5 uL
+    SD = 1 uL
 """
     )
 
