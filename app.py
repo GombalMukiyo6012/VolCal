@@ -24,7 +24,18 @@ st.set_page_config(
     page_title="HV3PFE Volume Calculator",
     layout="wide",
 )
+# ======================================================
+# SIDEBAR
+# ======================================================
 
+st.sidebar.title(
+    "📌 Panel"
+)
+
+sidebar_tab = st.sidebar.radio(
+    "",
+    ["Output", "Step"],
+)
 # ======================================================
 # PAGE HEADER
 # ======================================================
@@ -293,6 +304,76 @@ results = calculate_all(
     h_liq_sd_plus=h_liq_sd_plus,
     h_liq_sd_minus=h_liq_sd_minus,
 )
+# ======================================================
+# SIDEBAR OUTPUT
+# ======================================================
+
+if sidebar_tab == "Output":
+
+    st.sidebar.subheader(
+        "📊 Output"
+    )
+
+    st.sidebar.success(
+        f"LD Nominal: {results['ld_mean']}"
+    )
+
+    st.sidebar.success(
+        f"SD Nominal: {results['sd_mean']}"
+    )
+
+    st.sidebar.info(
+        f"LD RSS: {results['ld_rss']}"
+    )
+
+    st.sidebar.info(
+        f"SD RSS: {results['sd_rss']}"
+    )
+
+    st.sidebar.warning(
+        f"LD WC: {results['ld_wc']}"
+    )
+
+    st.sidebar.warning(
+        f"SD WC: {results['sd_wc']}"
+    )
+# ======================================================
+# SIDEBAR STEP
+# ======================================================
+
+if sidebar_tab == "Step":
+
+    st.sidebar.subheader(
+        "🧮 Calculation Flow"
+    )
+
+    st.sidebar.markdown(
+        """
+### 1. Input Parameters
+
+- Valve Thickness
+- AL Dome Diameter
+- AL Dome Depth
+- LL Dome Diameter
+- LL Dome Depth
+
+### 2. Nominal Volume
+
+Air + Liquid
+
+### 3. RSS
+
+Root Sum Square
+
+### 4. Worst Case
+
+All tolerances stacked
+
+### 5. Contribution
+
+Volume sensitivity per parameter
+"""
+    )
 
 # ======================================================
 # RESULTS TAB
