@@ -49,19 +49,19 @@ st.markdown(
 
     /* actual tab label text */
     .stTabs [data-baseweb="tab"] p{
-        font-size: 22px !important;
+        font-size: 30px !important;
         font-weight: 700 !important;
         margin: 0;
     }
 
     /* active tab */
     .stTabs [aria-selected="true"]{
-        border-bottom: 0px solid #ff4b4b;
+        border-top: 6px solid #ff4b4b;
     }
 
     /* active label */
     .stTabs [aria-selected="true"] p{
-        font-size: 22px !important;
+        font-size: 30px !important;
         font-weight: 800 !important;
         color: #ff4b4b !important;
     }
