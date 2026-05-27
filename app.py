@@ -53,7 +53,7 @@ st.markdown(
 
     /* active underline */
     .stTabs [aria-selected="true"]{
-        border-bottom: 4px solid #ff4b4b;
+        border-bottom: 0px solid #ff4b4b;
     }
 
     </style>
