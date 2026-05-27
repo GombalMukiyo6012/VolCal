@@ -45,7 +45,7 @@ st.markdown(
         min-width: 150px;
         padding: 12px 24px;
 
-        font-size: 20px;
+        font-size: 50px;
         font-weight: 700;
 
         border-radius: 10px 10px 0 0;
