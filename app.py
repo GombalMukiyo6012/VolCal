@@ -24,7 +24,42 @@ st.set_page_config(
     page_title="HV3PFE Volume Calculator",
     layout="wide",
 )
+# ======================================================
+# TAB STYLE
+# ======================================================
 
+st.markdown(
+    """
+    <style>
+
+    /* tab container */
+    .stTabs [data-baseweb="tab-list"]{
+        gap: 12px;
+        margin-top: 8px;
+        margin-bottom: 18px;
+    }
+
+    /* each tab */
+    .stTabs [data-baseweb="tab"]{
+        height: 56px;
+        min-width: 150px;
+        padding: 12px 24px;
+
+        font-size: 20px;
+        font-weight: 700;
+
+        border-radius: 10px 10px 0 0;
+    }
+
+    /* active underline */
+    .stTabs [aria-selected="true"]{
+        border-bottom: 4px solid #ff4b4b;
+    }
+
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 # ======================================================
 # PAGE HEADER
 # ======================================================
