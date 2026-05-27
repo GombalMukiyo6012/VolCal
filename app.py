@@ -32,28 +32,38 @@ st.markdown(
     """
     <style>
 
-    /* tab container */
+    /* tab row */
     .stTabs [data-baseweb="tab-list"]{
         gap: 12px;
         margin-top: 8px;
         margin-bottom: 18px;
     }
 
-    /* each tab */
+    /* tab box */
     .stTabs [data-baseweb="tab"]{
-        height: 56px;
-        min-width: 150px;
-        padding: 12px 24px;
-
-        font-size: 50px;
-        font-weight: 700;
-
+        min-width: 160px;
+        height: 58px;
+        padding: 10px 20px;
         border-radius: 10px 10px 0 0;
     }
 
-    /* active underline */
+    /* actual tab label text */
+    .stTabs [data-baseweb="tab"] p{
+        font-size: 22px !important;
+        font-weight: 700 !important;
+        margin: 0;
+    }
+
+    /* active tab */
     .stTabs [aria-selected="true"]{
         border-bottom: 0px solid #ff4b4b;
+    }
+
+    /* active label */
+    .stTabs [aria-selected="true"] p{
+        font-size: 22px !important;
+        font-weight: 800 !important;
+        color: #ff4b4b !important;
     }
 
     </style>
