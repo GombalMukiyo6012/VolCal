@@ -17,7 +17,7 @@ DEFAULT_TOL_MINUS = 0.005
 # VALVE THICKNESS
 # ======================================================
 
-DEFAULT_VALVE_LD = 0.100
+DEFAULT_VALVE_LD = 0.120
 DEFAULT_VALVE_SD = 0.080
 
 # ======================================================
@@ -46,4 +46,4 @@ DEFAULT_H_LIQ_LD = 0.550
 # ======================================================
 
 DEFAULT_D_LIQ_SD = 3.500
-DEFAULT_H_LIQ_SD = 0.320
+DEFAULT_H_LIQ_SD = 0.300
